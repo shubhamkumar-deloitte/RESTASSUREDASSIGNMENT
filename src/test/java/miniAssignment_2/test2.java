@@ -59,8 +59,7 @@ public class test2 {
             if (arr.getJSONObject(i).get("id").equals(40)) {
                 assert (arr.getJSONObject(i).get("userId").equals(4));
             }
-            assert (response.statusCode() == 200);
-            assert (response.contentType().contains("json"));
+
 
         }
     }
@@ -69,8 +68,7 @@ public class test2 {
         File jsonData=new File("C:\\Users\\shubhamkumar32\\IdeaProjects\\restAssured\\src\\test\\java\\resources\\putData.json");
 
         Response response=requestSpecification2.body(jsonData).put("/users").then().spec(responseSpecification).log().ifError().extract().response();
-        assert(response.getStatusCode()==200);
-        assert(response.getContentType().contains("json"));
+
 
         JSONObject object=new JSONObject(response.asString());
        assert(object.get("name").equals("Arun") && object.get("job").equals("Manager"));
