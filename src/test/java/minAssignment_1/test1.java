@@ -51,6 +51,9 @@ public class test1 {
         JSONObject obj = new JSONObject(response.asString());
         assert obj.get("name").equals("Arun") && obj.get("job").equals("Manager");
 
+        assert (response.getStatusCode()==200);
+        assert(response.getContentType().contains("json"));
+
 
 
 
