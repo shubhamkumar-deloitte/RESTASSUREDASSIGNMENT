@@ -1,6 +1,8 @@
 package miniAssignment_2;
 
 
+import io.restassured.RestAssured;
+import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.json.JSONArray;
@@ -20,9 +22,16 @@ public class test2 {
 
     @BeforeClass
     public void setup() {
-        requestSpecification = with().baseUri("https://jsonplaceholder.typicode.com").
-                header("Content-Type", "application/json");
-        requestSpecification2=with().baseUri("https://reqres.in/api").header("Content-type","application/json");
+        // Creating an object of RequestSpecBuilder
+        RequestSpecBuilder reqBuilder = new RequestSpecBuilder();
+        RequestSpecBuilder reqBuilder2=new RequestSpecBuilder();
+        // Setting Base URI
+        reqBuilder.setBaseUri("https://jsonplaceholder.typicode.com").addHeader("Content-Type", "application/json");
+        reqBuilder2.setBaseUri("https://reqres.in/api").addHeader("Content-Type","application/json");
+
+        //creating object of
+        requestSpecification = RestAssured.with().spec(reqBuilder.build());
+        requestSpecification2= RestAssured.with().spec(reqBuilder2.build());
 
     }
 
