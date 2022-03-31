@@ -42,7 +42,12 @@ public class test2 {
 
         JSONArray arr = new JSONArray(response.asString());
         for (int i = 0; i < arr.length(); i++) {
-            //System.out.println(arr.getJSONObject(i).get("id"));
+            //System.out.println(arr.getJSONObject(i).get("title"));
+
+            if(arr.getJSONObject(i).has("title")){
+                Assert.assertTrue(true);
+            }
+            assert(arr.getJSONObject(i).get("title")instanceof String);
 
             if (arr.getJSONObject(i).get("id").equals(40)) {
                 assert (arr.getJSONObject(i).get("userId").equals(4));
