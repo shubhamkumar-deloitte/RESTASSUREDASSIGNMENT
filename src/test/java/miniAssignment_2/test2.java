@@ -3,8 +3,11 @@ package miniAssignment_2;
 
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.builder.ResponseSpecBuilder;
+import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import io.restassured.specification.ResponseSpecification;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.testng.Assert;
@@ -19,6 +22,7 @@ public class test2 {
 
     RequestSpecification requestSpecification;
     RequestSpecification requestSpecification2;
+    ResponseSpecification responseSpecification;
 
     @BeforeClass
     public void setup() {
@@ -29,16 +33,19 @@ public class test2 {
         reqBuilder.setBaseUri("https://jsonplaceholder.typicode.com").addHeader("Content-Type", "application/json");
         reqBuilder2.setBaseUri("https://reqres.in/api").addHeader("Content-Type","application/json");
 
-        //creating object of
         requestSpecification = RestAssured.with().spec(reqBuilder.build());
         requestSpecification2= RestAssured.with().spec(reqBuilder2.build());
+
+        ResponseSpecBuilder responseSpecBuilder=new ResponseSpecBuilder();
+        responseSpecBuilder.expectContentType(ContentType.JSON).expectStatusCode(200);
+        responseSpecification=responseSpecBuilder.build();
 
     }
 
     @Test(priority = 1)
     public void get_request() {
 
-        Response response = requestSpecification.get("/posts");
+        Response response = requestSpecification.get("/posts").then().spec(responseSpecification).log().ifError().extract().response();
 
         JSONArray arr = new JSONArray(response.asString());
         for (int i = 0; i < arr.length(); i++) {
@@ -61,7 +68,7 @@ public class test2 {
     public void put_request(){
         File jsonData=new File("C:\\Users\\shubhamkumar32\\IdeaProjects\\restAssured\\src\\test\\java\\resources\\putData.json");
 
-        Response response=requestSpecification2.body(jsonData).put("/users");
+        Response response=requestSpecification2.body(jsonData).put("/users").then().spec(responseSpecification).log().ifError().extract().response();
         assert(response.getStatusCode()==200);
         assert(response.getContentType().contains("json"));
 
