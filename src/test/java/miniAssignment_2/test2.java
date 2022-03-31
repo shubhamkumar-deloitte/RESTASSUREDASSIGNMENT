@@ -28,17 +28,17 @@ public class test2 {
     public void setup() {
         // Creating an object of RequestSpecBuilder
         RequestSpecBuilder reqBuilder = new RequestSpecBuilder();
-        RequestSpecBuilder reqBuilder2=new RequestSpecBuilder();
+        RequestSpecBuilder reqBuilder2 = new RequestSpecBuilder();
         // Setting Base URI
         reqBuilder.setBaseUri("https://jsonplaceholder.typicode.com").addHeader("Content-Type", "application/json");
-        reqBuilder2.setBaseUri("https://reqres.in/api").addHeader("Content-Type","application/json");
+        reqBuilder2.setBaseUri("https://reqres.in/api").addHeader("Content-Type", "application/json");
 
         requestSpecification = RestAssured.with().spec(reqBuilder.build());
-        requestSpecification2= RestAssured.with().spec(reqBuilder2.build());
+        requestSpecification2 = RestAssured.with().spec(reqBuilder2.build());
 
-        ResponseSpecBuilder responseSpecBuilder=new ResponseSpecBuilder();
+        ResponseSpecBuilder responseSpecBuilder = new ResponseSpecBuilder();
         responseSpecBuilder.expectContentType(ContentType.JSON).expectStatusCode(200);
-        responseSpecification=responseSpecBuilder.build();
+        responseSpecification = responseSpecBuilder.build();
 
     }
 
@@ -51,10 +51,10 @@ public class test2 {
         for (int i = 0; i < arr.length(); i++) {
             //System.out.println(arr.getJSONObject(i).get("title"));
 
-            if(arr.getJSONObject(i).has("title")){
+            if (arr.getJSONObject(i).has("title")) {
                 Assert.assertTrue(true);
             }
-            assert(arr.getJSONObject(i).get("title")instanceof String);
+            assert (arr.getJSONObject(i).get("title") instanceof String);
 
             if (arr.getJSONObject(i).get("id").equals(40)) {
                 assert (arr.getJSONObject(i).get("userId").equals(4));
@@ -63,14 +63,15 @@ public class test2 {
 
         }
     }
+
     @Test(priority = 2)
-    public void put_request(){
-        File jsonData=new File("C:\\Users\\shubhamkumar32\\IdeaProjects\\restAssured\\src\\test\\java\\resources\\putData.json");
+    public void put_request() {
+        File jsonData = new File("C:\\Users\\shubhamkumar32\\IdeaProjects\\restAssured\\src\\test\\java\\resources\\putData.json");
 
-        Response response=requestSpecification2.body(jsonData).put("/users").then().spec(responseSpecification).log().ifError().extract().response();
+        Response response = requestSpecification2.body(jsonData).put("/users").then().spec(responseSpecification).log().ifError().extract().response();
 
 
-        JSONObject object=new JSONObject(response.asString());
-       assert(object.get("name").equals("Arun") && object.get("job").equals("Manager"));
+        JSONObject object = new JSONObject(response.asString());
+        assert (object.get("name").equals("Arun") && object.get("job").equals("Manager"));
     }
 }
