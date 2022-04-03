@@ -1,6 +1,7 @@
 package MainAssignment;
 
 import MainAssignment.activities.registerUserClass;
+import MainAssignment.activities.taskActivities;
 import MainAssignment.registrationUtils.readingFromExcel;
 import MainAssignment.registrationUtils.userClass;
 import com.aventstack.extentreports.ExtentReports;
@@ -22,9 +23,17 @@ public class testClass {
 
         registerUserClass.registerUser(user);
     }
-    void login(){
+    @Test(priority = 2)
+    void login() throws IOException {
 
-
+        taskActivities taskactivities=new taskActivities(baseClass.baseUri,baseClass.log);
+        taskactivities.login(readingFromExcel.registerUser());
+    }
+    @Test(priority = 3)
+    public void addAllTasks() throws IOException {
+        taskActivities taskactivities=new taskActivities(baseClass.baseUri,baseClass.log);
+        taskactivities.setup();
+        taskactivities.addAllTasks();
     }
 
 

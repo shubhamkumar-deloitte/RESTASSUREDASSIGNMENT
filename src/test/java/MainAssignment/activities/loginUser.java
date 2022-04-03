@@ -11,6 +11,8 @@ import io.restassured.specification.ResponseSpecification;
 import org.apache.logging.log4j.Logger;
 import org.json.JSONObject;
 
+import java.util.Locale;
+
 import static io.restassured.RestAssured.given;
 
 public class loginUser {
@@ -43,11 +45,12 @@ public class loginUser {
                 then().spec(responseSpecification).extract().response();
 
         logger.debug("login status code",response.statusCode());
+        System.out.println("login status code is "+ response.statusCode());
         assert response.statusCode()==200;
 
 
         //validating credentials
-        JSONObject object=new JSONObject(response.toString());
+        JSONObject object=new JSONObject(response.asString());
         token=object.getString("token");
 
         //data show after login
@@ -65,6 +68,11 @@ public class loginUser {
 //        }
 
         object=object.getJSONObject("user");
-        assert object.getString("name").equals(user.name) && object.getString("email").equalsIgnoreCase(user.email);
+        System.out.println(object.get("name"));
+        System.out.println(user.name);
+        System.out.println(object.get("email"));
+        System.out.println(user.email);
+        assert object.getString("name").equals(user.name) && object.getString("email").equals(user.email.toLowerCase());
+
     }
 }
