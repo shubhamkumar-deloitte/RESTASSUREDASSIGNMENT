@@ -1,0 +1,15 @@
+2022-44-03 16:44:47.495 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\shubhamkumar32\AppData\Local\JetBrains\IdeaIC2021.3\temp-testng-customsuite.xml"
+2022-44-03 16:44:47.634 [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE test2.setup()[pri:0, instance:null] 1627638835
+2022-44-03 16:44:47.634 [main] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+2022-44-03 16:44:47.636 [main] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+2022-44-03 16:44:47.637 [main] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+2022-44-03 16:44:47.637 [main] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+2022-44-03 16:44:47.643 [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE test2.put_request()[pri:2, instance:miniAssignment_2.test2@7c8c9a05] 429640016
+2022-44-03 16:44:47.644 [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE test2.get_request()[pri:1, instance:miniAssignment_2.test2@7c8c9a05] -1520192809
+2022-44-03 16:44:47.644 [main] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+2022-44-03 16:44:47.646 [main] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+2022-44-03 16:44:47.646 [main] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+2022-44-03 16:44:47.646 [main] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+2022-44-03 16:44:47.652 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\shubhamkumar32\AppData\Local\JetBrains\IdeaIC2021.3\temp-testng-customsuite.xml
+
