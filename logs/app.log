@@ -1,15 +1,17 @@
-2022-44-03 16:44:47.495 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\shubhamkumar32\AppData\Local\JetBrains\IdeaIC2021.3\temp-testng-customsuite.xml"
-2022-44-03 16:44:47.634 [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE test2.setup()[pri:0, instance:null] 1627638835
-2022-44-03 16:44:47.634 [main] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
-2022-44-03 16:44:47.636 [main] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
-2022-44-03 16:44:47.637 [main] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
-2022-44-03 16:44:47.637 [main] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
-2022-44-03 16:44:47.643 [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE test2.put_request()[pri:2, instance:miniAssignment_2.test2@7c8c9a05] 429640016
-2022-44-03 16:44:47.644 [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE test2.get_request()[pri:1, instance:miniAssignment_2.test2@7c8c9a05] -1520192809
-2022-44-03 16:44:47.644 [main] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
-2022-44-03 16:44:47.646 [main] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
-2022-44-03 16:44:47.646 [main] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
-2022-44-03 16:44:47.646 [main] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
-2022-44-03 16:44:47.652 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+2022-07-04 02:07:57.124 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\shubhamkumar32\AppData\Local\JetBrains\IdeaIC2021.3\temp-testng-customsuite.xml"
+2022-07-04 02:07:57.358 [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE testClass.registerUser()[pri:1, instance:MainAssignment.testClass@12c7a01b] 1909323084
+2022-07-04 02:07:57.358 [main] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+2022-07-04 02:07:57.358 [main] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+2022-07-04 02:07:57.358 [main] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+2022-07-04 02:07:57.358 [main] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+2022-07-04 02:07:57.374 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
   C:\Users\shubhamkumar32\AppData\Local\JetBrains\IdeaIC2021.3\temp-testng-customsuite.xml
 
+2022-07-04 02:07:58.043 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2022-07-04 02:07:58.043 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2022-07-04 02:07:58.043 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2022-07-04 02:07:58.043 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2022-07-04 02:07:58.355 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2022-07-04 02:07:58.355 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2022-07-04 02:07:58.502 [main] DEBUG MainAssignment.baseClass - {"password":"1.2345678E7","name":" shubham kumar","email":"shubhamk@gmail.com","age":22}
+2022-08-04 02:08:01.814 [main] INFO  MainAssignment.baseClass - registration successful

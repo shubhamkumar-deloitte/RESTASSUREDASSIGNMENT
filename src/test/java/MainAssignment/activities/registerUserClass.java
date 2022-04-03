@@ -7,7 +7,7 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
-import org.apache.logging.log4j.core.Logger;
+import org.apache.logging.log4j.Logger;
 import MainAssignment.registrationUtils.userClass;
 
 import static io.restassured.RestAssured.given;
@@ -38,11 +38,12 @@ public class registerUserClass {
         Response response=given().spec(requestSpecification).body(user.getJsonForRegistration().toString()).
                 post("/user/register").then().spec(responseSpecification).extract().response();
 
+        System.out.println("the response code for register user is "+ response.statusCode());
         if(response.statusCode()==200 || response.statusCode()==201){
             logger.info("registration successful");
             return true;
         }else{
-            logger.warn("regustration failed ");
+            logger.warn("registration failed ");
             return false;
         }
 
