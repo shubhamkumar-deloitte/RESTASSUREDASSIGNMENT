@@ -33,6 +33,7 @@ public class testClass {
 
         taskactivities.addAllTasks();
         taskactivities.numberOfTasksShown(5);
+        taskactivities.validateAllTasksInfo();
 
     }
     @Test(priority = 3)
