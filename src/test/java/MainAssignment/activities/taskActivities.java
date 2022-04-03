@@ -17,18 +17,16 @@ import java.util.List;
 
 import static io.restassured.RestAssured.given;
 
-public class taskActivities  extends loginUser{
+public class taskActivities extends loginUser {
 
+   private RequestSpecification requestSpecification;
+    private ResponseSpecification responseSpecification;
+    //list to contain all the tasks
+   private List<String>allTasks;
 
     public taskActivities(String url, Logger logger) {
         super(url, logger);
     }
-
-    RequestSpecification requestSpecification;
-    ResponseSpecification responseSpecification;
-    //list to contain all the tasks
-    List<String>allTasks;
-
 
 
     public void setup(){
@@ -36,6 +34,7 @@ public class taskActivities  extends loginUser{
         requestSpecBuilder.setBaseUri(url).addHeader("Content-Type","application/json")
                 .addHeader("Authorization","Bearer "+token);
 
+        System.out.println("token is "+token);
         requestSpecification= RestAssured.with().spec(requestSpecBuilder.build());
 
         ResponseSpecBuilder responseSpecBuilder=new ResponseSpecBuilder();
@@ -57,6 +56,7 @@ public class taskActivities  extends loginUser{
         Response response=given().spec(requestSpecification).body(object.toString()).when().post("/task")
                 .then().extract().response();
 
+        System.out.println("response code inside addonetask is "+response.statusCode());
         assert response.statusCode()==201;
 
         logger.info("task added");

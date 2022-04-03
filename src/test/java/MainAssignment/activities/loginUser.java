@@ -51,8 +51,10 @@ public class loginUser {
 
         //validating credentials
         JSONObject object=new JSONObject(response.asString());
+        System.out.println("inside login and token is "+object.get("token"));
         token=object.getString("token");
 
+        System.out.println("inside login and token is "+token);
         //data show after login
 //        {
 //            "user": {

@@ -1,5 +1,6 @@
 package MainAssignment;
 
+import MainAssignment.activities.loginUser;
 import MainAssignment.activities.registerUserClass;
 import MainAssignment.activities.taskActivities;
 import MainAssignment.registrationUtils.readingFromExcel;
@@ -28,12 +29,17 @@ public class testClass {
 
         taskActivities taskactivities=new taskActivities(baseClass.baseUri,baseClass.log);
         taskactivities.login(readingFromExcel.registerUser());
+        taskactivities.setup();
+
+        taskactivities.addAllTasks();
+        taskactivities.numberOfTasksShown(5);
+
     }
     @Test(priority = 3)
     public void addAllTasks() throws IOException {
+
         taskActivities taskactivities=new taskActivities(baseClass.baseUri,baseClass.log);
-        taskactivities.setup();
-        taskactivities.addAllTasks();
+
     }
 
 
