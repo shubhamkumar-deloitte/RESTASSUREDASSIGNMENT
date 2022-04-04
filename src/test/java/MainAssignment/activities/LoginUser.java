@@ -11,11 +11,11 @@ import io.restassured.specification.ResponseSpecification;
 import org.apache.logging.log4j.Logger;
 import org.json.JSONObject;
 
-import java.util.Locale;
+import java.io.File;
 
 import static io.restassured.RestAssured.given;
 
-public class loginUser {
+public class LoginUser {
     public String url;
     public String token;
 
@@ -24,7 +24,7 @@ public class loginUser {
     RequestSpecification requestSpecification;
     ResponseSpecification responseSpecification;
 
-    public loginUser(String url, Logger logger) {
+    public LoginUser(String url, Logger logger) {
         this.url = url;
         this.logger = logger;
 
@@ -51,10 +51,10 @@ public class loginUser {
 
         //validating credentials
         JSONObject object=new JSONObject(response.asString());
-        System.out.println("inside login and token is "+object.get("token"));
+        //System.out.println("inside login and token is "+object.get("token"));
         token=object.getString("token");
 
-        System.out.println("inside login and token is "+token);
+        //System.out.println("inside login and token is "+token);
         //data show after login
 //        {
 //            "user": {
@@ -76,5 +76,17 @@ public class loginUser {
         System.out.println(user.email);
         assert object.getString("name").equals(user.name) && object.getString("email").equals(user.email.toLowerCase());
 
+    }
+    public void negLogin(){
+
+        File jsonData=new File("C:\\Users\\shubhamkumar32\\IdeaProjects\\restAssured\\src\\test\\java\\resources\\negLoginData.json");
+        Response response=given().spec(requestSpecification).body(jsonData).post("/user/login").
+                then().spec(responseSpecification).extract().response();
+        System.out.println("login status code is "+ response.statusCode());
+        System.out.println("response is "+response.then().extract().body().asString());
+        if(response.then().extract().body().asString().equals("Unable to login")){
+            logger.warn("invalid login credentials provided");
+            assert response.statusCode()==400;
+        }
     }
 }
