@@ -12,19 +12,20 @@ import io.restassured.specification.ResponseSpecification;
 import org.apache.logging.log4j.Logger;
 import org.json.JSONObject;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
 import static io.restassured.RestAssured.given;
 
-public class taskActivities extends loginUser {
+public class TaskActivities extends LoginUser {
 
    private RequestSpecification requestSpecification;
     private ResponseSpecification responseSpecification;
     //list to contain all the tasks
    private List<String>allTasks;
 
-    public taskActivities(String url, Logger logger) {
+    public TaskActivities(String url, Logger logger) {
         super(url, logger);
     }
 
@@ -107,6 +108,22 @@ public class taskActivities extends loginUser {
 
         return true;
 
+
+
+    }
+    public void negAddTask(){
+
+        File jsondata= new File("C:\\Users\\shubhamkumar32\\IdeaProjects\\restAssured\\src\\test\\java\\resources\\negTaskData.json");
+
+        Response response=given().spec(requestSpecification).body(jsondata).when().post("/task")
+                .then().extract().response();
+
+        System.out.println("response code inside addonetask is "+response.statusCode());
+        assert response.statusCode()==400;
+
+        if(response.then().extract().body().asString().contains("Task validation failed")){
+            logger.warn("wrong task credenrials given. Task not added");
+        }
 
 
     }
