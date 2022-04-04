@@ -12,13 +12,13 @@ import MainAssignment.registrationUtils.userClass;
 
 import static io.restassured.RestAssured.given;
 
-public class registerUserClass {
+public class RegisterUserClass {
     Logger logger;
     String url;
     RequestSpecification requestSpecification;
     ResponseSpecification responseSpecification;
 
-    public registerUserClass(Logger logger, String url) {
+    public RegisterUserClass(Logger logger, String url) {
         this.logger = logger;
         this.url = url;
 
@@ -39,13 +39,22 @@ public class registerUserClass {
                 post("/user/register").then().spec(responseSpecification).extract().response();
 
         System.out.println("the response code for register user is "+ response.statusCode());
+
         if(response.statusCode()==200 || response.statusCode()==201){
             logger.info("registration successful");
             return true;
+        }else if(response.statusCode()==400){
+            logger.warn("user already exists");
+           // Assert.assertTrue(false);
+
+
+            return false;
+
         }else{
             logger.warn("registration failed ");
             return false;
         }
+
 
     }
 
