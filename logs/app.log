@@ -1,18 +1,123 @@
-2022-23-04 10:23:54.012 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\shubhamkumar32\AppData\Local\JetBrains\IdeaIC2021.3\temp-testng-customsuite.xml"
-2022-23-04 10:23:54.228 [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE testClass.negTaskCase()[pri:5, instance:MainAssignment.testClass@2654635] 1934155707
-2022-23-04 10:23:54.228 [main] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
-2022-23-04 10:23:54.228 [main] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
-2022-23-04 10:23:54.228 [main] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
-2022-23-04 10:23:54.228 [main] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
-2022-23-04 10:23:54.228 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  C:\Users\shubhamkumar32\AppData\Local\JetBrains\IdeaIC2021.3\temp-testng-customsuite.xml
+2022-45-04 10:45:16.967 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\shubhamkumar32\IdeaProjects\restAssured\src\test\java\MainAssignment\testng.xml"
+2022-45-04 10:45:17.152 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-45-04 10:45:17.168 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-45-04 10:45:17.168 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-45-04 10:45:17.168 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-45-04 10:45:17.168 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-45-04 10:45:17.168 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-45-04 10:45:17.168 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-45-04 10:45:17.168 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-45-04 10:45:17.168 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-45-04 10:45:17.168 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-45-04 10:45:17.168 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-45-04 10:45:17.168 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-45-04 10:45:17.168 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-45-04 10:45:17.168 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-45-04 10:45:17.168 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-45-04 10:45:17.168 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-45-04 10:45:17.168 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-45-04 10:45:17.168 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-45-04 10:45:17.168 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-45-04 10:45:17.168 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-45-04 10:45:17.168 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-45-04 10:45:17.168 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-45-04 10:45:17.168 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-45-04 10:45:17.168 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-45-04 10:45:17.168 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-45-04 10:45:17.183 [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE testClass.negTaskCase()[pri:5, instance:MainAssignment.testClass@63f8276e] -723795724
+2022-45-04 10:45:17.183 [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE testClass.negLoginCase()[pri:4, instance:MainAssignment.testClass@63f8276e] 727486200
+2022-45-04 10:45:17.183 [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE testClass.registerUser()[pri:1, instance:MainAssignment.testClass@63f8276e] -1023509345
+2022-45-04 10:45:17.183 [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE testClass.negRegisterCase()[pri:3, instance:MainAssignment.testClass@63f8276e] -448158958
+2022-45-04 10:45:17.183 [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE testClass.login()[pri:2, instance:MainAssignment.testClass@63f8276e] -1389699304
+2022-45-04 10:45:17.183 [main] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+2022-45-04 10:45:17.201 [main] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+2022-45-04 10:45:17.201 [main] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+2022-45-04 10:45:17.201 [main] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+2022-45-04 10:45:17.201 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 33 ms.
+2022-45-04 10:45:17.217 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-45-04 10:45:17.217 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-45-04 10:45:17.217 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-45-04 10:45:17.217 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-45-04 10:45:17.221 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\shubhamkumar32\IdeaProjects\restAssured\src\test\java\MainAssignment\testng.xml
 
-2022-23-04 10:23:54.845 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-2022-23-04 10:23:54.845 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-2022-23-04 10:23:54.845 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
-2022-23-04 10:23:54.845 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-2022-23-04 10:23:55.130 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-2022-23-04 10:23:55.130 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-2022-23-04 10:23:55.215 [main] DEBUG MainAssignment.baseClass - login json data
-2022-23-04 10:23:57.836 [main] DEBUG MainAssignment.baseClass - login status code
-2022-23-04 10:23:59.468 [main] WARN  MainAssignment.baseClass - wrong task credenrials given. Task not added
+2022-45-04 10:45:17.221 [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 0 ms.
+2022-45-04 10:45:17.987 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2022-45-04 10:45:18.003 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2022-45-04 10:45:18.003 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2022-45-04 10:45:18.003 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2022-45-04 10:45:18.301 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2022-45-04 10:45:18.301 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2022-45-04 10:45:18.385 [main] DEBUG MainAssignment.baseClass - {"password":"1.2345678E7","name":"shubham kumar","email":"shubhamk@gmail.com","age":22}
+2022-45-04 10:45:20.690 [main] WARN  MainAssignment.baseClass - user already exists
+2022-45-04 10:45:20.706 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2022-45-04 10:45:20.706 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2022-45-04 10:45:20.706 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2022-45-04 10:45:20.706 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2022-45-04 10:45:20.706 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2022-45-04 10:45:20.706 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2022-45-04 10:45:20.722 [main] DEBUG MainAssignment.baseClass - login json data
+2022-45-04 10:45:22.648 [main] DEBUG MainAssignment.baseClass - login status code
+2022-45-04 10:45:22.663 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2022-45-04 10:45:22.663 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2022-45-04 10:45:22.663 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2022-45-04 10:45:22.663 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2022-45-04 10:45:22.663 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2022-45-04 10:45:22.663 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2022-45-04 10:45:22.679 [main] INFO  MainAssignment.baseClass - task being added
+2022-45-04 10:45:24.514 [main] INFO  MainAssignment.baseClass - task added
+2022-45-04 10:45:24.514 [main] INFO  MainAssignment.baseClass - task being added
+2022-45-04 10:45:26.340 [main] INFO  MainAssignment.baseClass - task added
+2022-45-04 10:45:26.340 [main] INFO  MainAssignment.baseClass - task being added
+2022-45-04 10:45:28.175 [main] INFO  MainAssignment.baseClass - task added
+2022-45-04 10:45:28.175 [main] INFO  MainAssignment.baseClass - task being added
+2022-45-04 10:45:30.025 [main] INFO  MainAssignment.baseClass - task added
+2022-45-04 10:45:30.025 [main] INFO  MainAssignment.baseClass - task being added
+2022-45-04 10:45:31.881 [main] INFO  MainAssignment.baseClass - task added
+2022-45-04 10:45:31.881 [main] INFO  MainAssignment.baseClass - task being added
+2022-45-04 10:45:33.739 [main] INFO  MainAssignment.baseClass - task added
+2022-45-04 10:45:33.739 [main] INFO  MainAssignment.baseClass - task being added
+2022-45-04 10:45:35.605 [main] INFO  MainAssignment.baseClass - task added
+2022-45-04 10:45:35.605 [main] INFO  MainAssignment.baseClass - task being added
+2022-45-04 10:45:37.496 [main] INFO  MainAssignment.baseClass - task added
+2022-45-04 10:45:37.496 [main] INFO  MainAssignment.baseClass - task being added
+2022-45-04 10:45:39.344 [main] INFO  MainAssignment.baseClass - task added
+2022-45-04 10:45:39.344 [main] INFO  MainAssignment.baseClass - task being added
+2022-45-04 10:45:41.257 [main] INFO  MainAssignment.baseClass - task added
+2022-45-04 10:45:41.257 [main] INFO  MainAssignment.baseClass - task being added
+2022-45-04 10:45:43.101 [main] INFO  MainAssignment.baseClass - task added
+2022-45-04 10:45:43.101 [main] INFO  MainAssignment.baseClass - task being added
+2022-45-04 10:45:44.966 [main] INFO  MainAssignment.baseClass - task added
+2022-45-04 10:45:44.966 [main] INFO  MainAssignment.baseClass - task being added
+2022-45-04 10:45:46.773 [main] INFO  MainAssignment.baseClass - task added
+2022-45-04 10:45:46.789 [main] INFO  MainAssignment.baseClass - task being added
+2022-45-04 10:45:48.659 [main] INFO  MainAssignment.baseClass - task added
+2022-45-04 10:45:48.659 [main] INFO  MainAssignment.baseClass - task being added
+2022-45-04 10:45:50.498 [main] INFO  MainAssignment.baseClass - task added
+2022-45-04 10:45:50.498 [main] INFO  MainAssignment.baseClass - task being added
+2022-45-04 10:45:52.417 [main] INFO  MainAssignment.baseClass - task added
+2022-45-04 10:45:52.417 [main] INFO  MainAssignment.baseClass - task being added
+2022-45-04 10:45:54.324 [main] INFO  MainAssignment.baseClass - task added
+2022-45-04 10:45:54.324 [main] INFO  MainAssignment.baseClass - task being added
+2022-45-04 10:45:56.171 [main] INFO  MainAssignment.baseClass - task added
+2022-45-04 10:45:56.171 [main] INFO  MainAssignment.baseClass - task being added
+2022-45-04 10:45:58.011 [main] INFO  MainAssignment.baseClass - task added
+2022-45-04 10:45:58.011 [main] INFO  MainAssignment.baseClass - all tasks added successfully
+2022-46-04 10:46:02.271 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2022-46-04 10:46:02.271 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2022-46-04 10:46:02.271 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2022-46-04 10:46:02.271 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2022-46-04 10:46:02.271 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2022-46-04 10:46:02.271 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2022-46-04 10:46:02.287 [main] DEBUG MainAssignment.baseClass - {"password":"1.2345678E7","name":"shubham kumar","email":"shubhamk@gmail.com","age":22}
+2022-46-04 10:46:03.911 [main] WARN  MainAssignment.baseClass - user already exists
+2022-46-04 10:46:05.540 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2022-46-04 10:46:05.540 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2022-46-04 10:46:05.540 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2022-46-04 10:46:05.540 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2022-46-04 10:46:05.540 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2022-46-04 10:46:05.540 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2022-46-04 10:46:05.540 [main] DEBUG MainAssignment.baseClass - login json data
+2022-46-04 10:46:07.475 [main] DEBUG MainAssignment.baseClass - login status code
+2022-46-04 10:46:09.117 [main] WARN  MainAssignment.baseClass - wrong task credenrials given. Task not added
+2022-46-04 10:46:09.117 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@1a2724d3: 0 ms

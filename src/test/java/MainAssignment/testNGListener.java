@@ -9,6 +9,7 @@ public class testNGListener implements ITestListener {
 
     Logger log = baseClass.log;
 
+
     @Override
     public void onTestStart(ITestResult result) {
         log.info(result.getMethod().getMethodName() + " start");
