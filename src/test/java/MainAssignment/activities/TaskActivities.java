@@ -17,6 +17,7 @@ import java.io.IOException;
 import java.util.List;
 
 import static io.restassured.RestAssured.given;
+import static io.restassured.RestAssured.with;
 
 public class TaskActivities extends LoginUser {
 
@@ -36,7 +37,7 @@ public class TaskActivities extends LoginUser {
                 .addHeader("Authorization","Bearer "+token);
 
         System.out.println("token is "+token);
-        requestSpecification= RestAssured.with().spec(requestSpecBuilder.build());
+        requestSpecification= with().spec(requestSpecBuilder.build());
 
         ResponseSpecBuilder responseSpecBuilder=new ResponseSpecBuilder();
         responseSpecBuilder.expectContentType(ContentType.JSON);

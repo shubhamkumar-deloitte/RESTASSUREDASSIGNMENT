@@ -1,5 +1,8 @@
 package MainAssignment;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import org.apache.logging.log4j.Logger;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
@@ -10,13 +13,13 @@ public class testNGListener implements ITestListener {
     Logger log = baseClass.log;
 
 
+
+
     @Override
     public void onTestStart(ITestResult result) {
         log.info(result.getMethod().getMethodName() + " start");
+
         System.out.println("*** Test Suite " + result.getName() + " started ***");
-
-
-
 
     }
 
@@ -49,6 +52,7 @@ public class testNGListener implements ITestListener {
     public void onFinish(ITestContext context) {
 
         baseClass.log.traceExit();
+
 
     }
 

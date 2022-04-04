@@ -14,6 +14,7 @@ import org.json.JSONObject;
 import java.io.File;
 
 import static io.restassured.RestAssured.given;
+import static io.restassured.RestAssured.with;
 
 public class LoginUser {
     public String url;
@@ -31,7 +32,7 @@ public class LoginUser {
 
         RequestSpecBuilder requestSpecBuilder=new RequestSpecBuilder();
         requestSpecBuilder.setBaseUri(url).addHeader("Content-Type","application/json");
-        requestSpecification= RestAssured.with().spec(requestSpecBuilder.build());
+        requestSpecification= with().spec(requestSpecBuilder.build());
 
         ResponseSpecBuilder responseSpecBuilder=new ResponseSpecBuilder();
         responseSpecBuilder.expectContentType(ContentType.JSON);

@@ -11,6 +11,7 @@ import org.apache.logging.log4j.Logger;
 import MainAssignment.registrationUtils.userClass;
 
 import static io.restassured.RestAssured.given;
+import static io.restassured.RestAssured.with;
 
 public class RegisterUserClass {
     Logger logger;
@@ -24,7 +25,7 @@ public class RegisterUserClass {
 
         RequestSpecBuilder requestSpecBuilder=new RequestSpecBuilder();
         requestSpecBuilder.setBaseUri(url).addHeader("Content-Type","application/json");
-        requestSpecification= RestAssured.with().spec(requestSpecBuilder.build());
+        requestSpecification= with().spec(requestSpecBuilder.build());
 
 
         ResponseSpecBuilder responseSpecBuilder=new ResponseSpecBuilder();

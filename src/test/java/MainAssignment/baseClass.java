@@ -13,8 +13,7 @@ public class baseClass {
     public static String baseUri="https://api-nodejs-todolist.herokuapp.com";
 
     static {
-        extentReports=new ExtentReports();
-        extentReports.attachReporter(new ExtentHtmlReporter("extent.html"));
+
         log=LogManager.getLogger(baseClass.class.getName());
     }
 }
