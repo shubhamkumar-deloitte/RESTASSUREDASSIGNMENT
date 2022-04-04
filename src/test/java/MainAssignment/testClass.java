@@ -1,8 +1,8 @@
 package MainAssignment;
 
-import MainAssignment.activities.loginUser;
-import MainAssignment.activities.registerUserClass;
-import MainAssignment.activities.taskActivities;
+import MainAssignment.activities.LoginUser;
+import MainAssignment.activities.RegisterUserClass;
+import MainAssignment.activities.TaskActivities;
 import MainAssignment.registrationUtils.readingFromExcel;
 import MainAssignment.registrationUtils.userClass;
 import com.aventstack.extentreports.ExtentReports;
@@ -19,7 +19,7 @@ public class testClass {
     @Test(priority = 1)
     public void registerUser() throws IOException {
 
-        registerUserClass registerUserClass=new registerUserClass(baseClass.log,baseClass.baseUri);
+        RegisterUserClass registerUserClass=new RegisterUserClass(baseClass.log,baseClass.baseUri);
         userClass user= readingFromExcel.registerUser();
 
         registerUserClass.registerUser(user);
@@ -27,7 +27,7 @@ public class testClass {
     @Test(priority = 2)
     void login() throws IOException {
 
-        taskActivities taskactivities=new taskActivities(baseClass.baseUri,baseClass.log);
+        TaskActivities taskactivities=new TaskActivities(baseClass.baseUri,baseClass.log);
         taskactivities.login(readingFromExcel.registerUser());
         taskactivities.setup();
 
@@ -37,11 +37,31 @@ public class testClass {
 
     }
     @Test(priority = 3)
-    public void addAllTasks() throws IOException {
+    public void negRegisterCase() throws IOException {
 
-        taskActivities taskactivities=new taskActivities(baseClass.baseUri,baseClass.log);
+        RegisterUserClass registerUserClass=new RegisterUserClass(baseClass.log,baseClass.baseUri);
+        userClass user= readingFromExcel.registerUser();
+
+        registerUserClass.registerUser(user);
 
     }
+    @Test(priority = 4)
+    public void negLoginCase(){
 
+        LoginUser loginUser=new LoginUser(baseClass.baseUri,baseClass.log);
+        loginUser.negLogin();
+    }
+
+
+    @Test(priority = 5)
+    public void negTaskCase() throws IOException {
+
+        TaskActivities taskActivities=new TaskActivities(baseClass.baseUri,baseClass.log);
+        taskActivities.login(readingFromExcel.registerUser());
+
+        taskActivities.setup();
+        taskActivities.negAddTask();
+
+    }
 
 }
