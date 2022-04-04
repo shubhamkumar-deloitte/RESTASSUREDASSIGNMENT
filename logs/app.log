@@ -1,62 +1,18 @@
-2022-44-04 03:44:43.013 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\shubhamkumar32\AppData\Local\JetBrains\IdeaIC2021.3\temp-testng-customsuite.xml"
-2022-44-04 03:44:43.232 [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE testClass.login()[pri:2, instance:MainAssignment.testClass@2654635] 1268252127
-2022-44-04 03:44:43.232 [main] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
-2022-44-04 03:44:43.247 [main] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
-2022-44-04 03:44:43.247 [main] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
-2022-44-04 03:44:43.247 [main] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
-2022-44-04 03:44:43.247 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+2022-23-04 10:23:54.012 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\shubhamkumar32\AppData\Local\JetBrains\IdeaIC2021.3\temp-testng-customsuite.xml"
+2022-23-04 10:23:54.228 [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE testClass.negTaskCase()[pri:5, instance:MainAssignment.testClass@2654635] 1934155707
+2022-23-04 10:23:54.228 [main] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+2022-23-04 10:23:54.228 [main] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+2022-23-04 10:23:54.228 [main] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+2022-23-04 10:23:54.228 [main] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+2022-23-04 10:23:54.228 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
   C:\Users\shubhamkumar32\AppData\Local\JetBrains\IdeaIC2021.3\temp-testng-customsuite.xml
 
-2022-44-04 03:44:43.922 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-2022-44-04 03:44:43.922 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-2022-44-04 03:44:43.922 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
-2022-44-04 03:44:43.922 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-2022-44-04 03:44:44.231 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-2022-44-04 03:44:44.247 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-2022-44-04 03:44:44.337 [main] DEBUG MainAssignment.baseClass - login json data
-2022-44-04 03:44:47.603 [main] DEBUG MainAssignment.baseClass - login status code
-2022-44-04 03:44:47.619 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-2022-44-04 03:44:47.619 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-2022-44-04 03:44:47.619 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
-2022-44-04 03:44:47.619 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-2022-44-04 03:44:47.635 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-2022-44-04 03:44:47.635 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-2022-44-04 03:44:47.635 [main] INFO  MainAssignment.baseClass - task being added
-2022-44-04 03:44:49.793 [main] INFO  MainAssignment.baseClass - task added
-2022-44-04 03:44:49.793 [main] INFO  MainAssignment.baseClass - task being added
-2022-44-04 03:44:52.245 [main] INFO  MainAssignment.baseClass - task added
-2022-44-04 03:44:52.245 [main] INFO  MainAssignment.baseClass - task being added
-2022-44-04 03:44:54.297 [main] INFO  MainAssignment.baseClass - task added
-2022-44-04 03:44:54.297 [main] INFO  MainAssignment.baseClass - task being added
-2022-44-04 03:44:56.354 [main] INFO  MainAssignment.baseClass - task added
-2022-44-04 03:44:56.354 [main] INFO  MainAssignment.baseClass - task being added
-2022-44-04 03:44:58.386 [main] INFO  MainAssignment.baseClass - task added
-2022-44-04 03:44:58.386 [main] INFO  MainAssignment.baseClass - task being added
-2022-45-04 03:45:00.839 [main] INFO  MainAssignment.baseClass - task added
-2022-45-04 03:45:00.839 [main] INFO  MainAssignment.baseClass - task being added
-2022-45-04 03:45:03.308 [main] INFO  MainAssignment.baseClass - task added
-2022-45-04 03:45:03.308 [main] INFO  MainAssignment.baseClass - task being added
-2022-45-04 03:45:05.767 [main] INFO  MainAssignment.baseClass - task added
-2022-45-04 03:45:05.768 [main] INFO  MainAssignment.baseClass - task being added
-2022-45-04 03:45:08.216 [main] INFO  MainAssignment.baseClass - task added
-2022-45-04 03:45:08.216 [main] INFO  MainAssignment.baseClass - task being added
-2022-45-04 03:45:10.575 [main] INFO  MainAssignment.baseClass - task added
-2022-45-04 03:45:10.575 [main] INFO  MainAssignment.baseClass - task being added
-2022-45-04 03:45:12.731 [main] INFO  MainAssignment.baseClass - task added
-2022-45-04 03:45:12.731 [main] INFO  MainAssignment.baseClass - task being added
-2022-45-04 03:45:15.180 [main] INFO  MainAssignment.baseClass - task added
-2022-45-04 03:45:15.180 [main] INFO  MainAssignment.baseClass - task being added
-2022-45-04 03:45:17.634 [main] INFO  MainAssignment.baseClass - task added
-2022-45-04 03:45:17.634 [main] INFO  MainAssignment.baseClass - task being added
-2022-45-04 03:45:19.683 [main] INFO  MainAssignment.baseClass - task added
-2022-45-04 03:45:19.683 [main] INFO  MainAssignment.baseClass - task being added
-2022-45-04 03:45:21.948 [main] INFO  MainAssignment.baseClass - task added
-2022-45-04 03:45:21.948 [main] INFO  MainAssignment.baseClass - task being added
-2022-45-04 03:45:23.994 [main] INFO  MainAssignment.baseClass - task added
-2022-45-04 03:45:23.994 [main] INFO  MainAssignment.baseClass - task being added
-2022-45-04 03:45:26.042 [main] INFO  MainAssignment.baseClass - task added
-2022-45-04 03:45:26.042 [main] INFO  MainAssignment.baseClass - task being added
-2022-45-04 03:45:28.089 [main] INFO  MainAssignment.baseClass - task added
-2022-45-04 03:45:28.089 [main] INFO  MainAssignment.baseClass - task being added
-2022-45-04 03:45:30.031 [main] INFO  MainAssignment.baseClass - task added
-2022-45-04 03:45:30.031 [main] INFO  MainAssignment.baseClass - all tasks added successfully
+2022-23-04 10:23:54.845 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2022-23-04 10:23:54.845 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2022-23-04 10:23:54.845 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2022-23-04 10:23:54.845 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2022-23-04 10:23:55.130 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2022-23-04 10:23:55.130 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2022-23-04 10:23:55.215 [main] DEBUG MainAssignment.baseClass - login json data
+2022-23-04 10:23:57.836 [main] DEBUG MainAssignment.baseClass - login status code
+2022-23-04 10:23:59.468 [main] WARN  MainAssignment.baseClass - wrong task credenrials given. Task not added
