@@ -12,6 +12,7 @@ public class userClass {
         this.email = email;
         this.password = password;
         this.age = age;
+
     }
 
     //taking json data from here for registration
